@@ -25,5 +25,5 @@ app.get('/', (req, res)=> {
 })
  
 app.listen(port, ()=>{
-  console.log(`Servidor iniciado na porta 8080: http://localhost:${port}`)
+  console.log(`Servidor iniciado na porta ${port}: http://localhost:${port}`)
 })
