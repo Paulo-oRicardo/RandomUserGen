@@ -4,7 +4,7 @@ const app = express()
 
 const port = 8080;
  
-app.get('/',  (req, res)=> {
+app.get('/', (req, res)=> {
      firstName = faker.name.firstName();
      lastName= faker.name.lastName();
      gender =faker.name.gender();
@@ -13,14 +13,14 @@ app.get('/',  (req, res)=> {
      password = faker.internet.password();
     
     return res.send(
-    person = {
-      firstName:firstName,
-      lastName:lastName,
-      gender:gender,
-      birth:birth,
-      email:email,
-      password:password
-      }
+      person = {
+        firstName:firstName,
+        lastName:lastName,
+        gender:gender,
+        birth:birth,
+        email:email,
+        password:password
+        }
     );
 })
  
